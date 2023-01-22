@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
@@ -20,8 +21,9 @@
 <!--=====================================================-->
 <!--navbar Section -->
   <div>
-    <header>
-      <nav class="nav-container">
+    <header class="container">
+      
+      <nav class="nav-container" role="navigation">
 
         <img  src="./assets/images/logo.svg" alt="">
 
@@ -34,51 +36,60 @@
         </ul>
         <img class="burger-icon" src="./assets/images/icon-menu.svg" alt="">
       </nav>
-    </header>
-    <!--end of navbar section-->
+  
+    
+  </header>
+  <!--end of navbar section-->
 
-    <!--start of content section-->
-    <section class="content">
-      <img id="mobile-img" src="./assets/images/image-web-3-mobile.jpg" alt="">
+  <!--start of content section-->
+  <main class="container content" role="main">
+    
+    
+    <img id="desktop-img" src="./assets/images/image-web-3-desktop.jpg" alt="">   
+    <img id="mobile-img" src="./assets/images/image-web-3-mobile.jpg" alt="">
 
-      <img id="desktop-img" src="./assets/images/image-web-3-desktop.jpg" alt="">
-
+    <article>
+      <h1 class="font-header">The Bright Future of <br/> Web 3.0?</h1>
+    </article>
+    <article>
+      <p class="greyText">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?
+      </p>
+      <div>
+        <a class="redButton">Read more</a>
+      </div>
+       
       
+    </article>
+  
+  </main>
 
-      <article>
-        <p class="font-header">The Bright Future of <br/> Web 3.0?</p>
-      </article>
-      <article>
-        <p class="greyText">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-          But is it really fulfilling its promise?
-        </p>
-        <button class="redButton">Read more</button>
-      </article>
-    </section>
-
-    <!--sidebar section-->
-    <section class="sideSection">
+  <!--sidebar section-->
+  <aside class="container asider-section" role="sidebar">
+    
       <h2 class="newColor">New</h2>
       <article>
-        <h4 class="active-side-heading">Hydrogen VS Electric Cars</h4>
+        <h3 class="active-side-heading">Hydrogen VS Electric Cars</h3>
         <p class="greyText"> Will hydrogen-fueled cars ever catch up to EVs?</p>
         <hr>
       </article>
       <article>
-        <h4 class="active-side-heading">The Downsides of AI Artistry</h4>
+        <h3 class="active-side-heading">The Downsides of AI Artistry</h3>
         <p class="greyText">What are the possible adverse effects of on-demand AI image generation?</p>
         <hr>
       </article>
       <article>
-        <h4 class="active-side-heading">Is VC Funding Drying Up?</h4>
+        <h3 class="active-side-heading">Is VC Funding Drying Up?</h3>
         <p class="greyText">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </article>
-    </section>
-    <!--end of sidebar section-->
+    
+    
+  </aside>
+  <!--end of sidebar section-->
 
-    <!--footer section-->
-    <footer>
-      <div class="footerSection">
+  <!--footer section-->
+  <footer class="container " role="contentinfo" >
+      <div class="footer-section">
         <article>
           <img class="footerImg" src="./assets/images/image-retro-pcs.jpg" alt="">
           <section>
@@ -86,7 +97,7 @@
             <h4 class="footer-hover">Reviving Retro PCs</h4>
             <p class="greyText">What happens when old PCs are given modern upgrades?</p>
           </section>
-
+  
         </article>
         <article>
           <img class="footerImg" src="./assets/images/image-top-laptops.jpg" alt="">
@@ -95,7 +106,7 @@
             <h4 class="footer-hover">Top 10 Laptops of 2022</h4>
             <p class="greyText">Our best picks for various needs and budgets</p>
           </section>
-
+  
         </article>
         <article>
           <img class="footerImg" src="./assets/images/image-gaming-growth.jpg" alt="">
@@ -104,19 +115,23 @@
             <h4 class="footer-hover" >The Growth of Gaming</h4>
             <p  class="greyText">How the pandemic has sparked fresh opportunities.</p>
           </section>
-
+  
         </article>
+    
       </div>
-      <div class="attribution">
+        
+    
+      
 
-        <p>
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/bryondickers">Bryondickers</a>.
+       <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/bryondickers">Bryondickers</a>.
         </p>
-       
-      </div>
-    </footer>
+     
+      
+  </footer>
 
   </div>
+
 </body>
 </html>
