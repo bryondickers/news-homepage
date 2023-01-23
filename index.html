@@ -21,20 +21,24 @@
 <!--=====================================================-->
 <!--navbar Section -->
   <div>
-    <header class="container">
+    <header class="container" role="banner">
       
       <nav class="nav-container" role="navigation">
 
         <img  src="./assets/images/logo.svg" alt="">
 
-        <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">New</li>
-          <li class="nav-item">Popular</li>
-          <li class="nav-item">Trending</li>
-          <li class="nav-item">Categories</li>
-        </ul>
-        <img class="burger-icon" src="./assets/images/icon-menu.svg" alt="">
+        <div class="div-list">
+          <img class="burger-icon" role="button" src="./assets/images/icon-menu.svg" alt="">
+          <ul id="navList" class="nav-list-desktop nav-list-remove ">
+            <li class="nav-item"> <a href="">Home</a></li>
+            
+            <li class="nav-item"><a href="">New</a></li>
+            <li class="nav-item"><a href="">Popular</a></li>
+            <li class="nav-item"><a href="">Trending</a></li>
+            <li class="nav-item"><a href="">Categories</a></li>
+          </ul>
+        </div>
+        
       </nav>
   
     
@@ -67,7 +71,7 @@
   <!--sidebar section-->
   <aside class="container asider-section" role="sidebar">
     
-      <h2 class="newColor">New</h2>
+      <h2 class="newColor" role="columnheader">New</h2>
       <article>
         <h3 class="active-side-heading">Hydrogen VS Electric Cars</h3>
         <p class="greyText"> Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -132,6 +136,29 @@
   </footer>
 
   </div>
+  <script>
+  document.querySelector(".burger-icon").addEventListener("click",function(e){
+
+    let ulList = document.querySelector("#navList");
+
+    if(ulList.classList.contains("nav-list-remove")){
+        e.target.style.border = "5px grey solid"
+
+        ulList.classList.remove("nav-list-remove");
+        ulList.classList.add("nav-list-display");
+
+      }else{
+        e.target.style.border = "none";
+        ulList.classList.remove("nav-list-display");
+        ulList.classList.add("nav-list-remove");
+        
+      }
+
+  })
+
+
+  </script>
+
 
 </body>
 </html>
